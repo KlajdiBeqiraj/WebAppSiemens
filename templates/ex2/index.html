@@ -1,0 +1,15 @@
+{% extends  'ex2/base.html' %}
+
+{% block content%}
+    <h1>Hello World!</h1>
+    <p> my name is {{ first_name }}</p>
+    <p> {{ stuff| striptags }}</p>
+
+    <h3>La mia lista:</h3>
+    {% for elemento in esempio_lista %}
+        {{ elemento }}<br/>
+    {% endfor %}
+
+    <br/><br/>
+    {{ esempio_lista.0 +"a" }}
+{% endblock%}

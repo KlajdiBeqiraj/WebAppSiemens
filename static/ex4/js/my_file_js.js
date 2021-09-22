@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML= "This ws created with JavaScript"
